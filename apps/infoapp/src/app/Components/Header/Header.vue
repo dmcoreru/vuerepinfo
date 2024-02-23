@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useBurgerStore } from '../../stores/burgerStore';
+
+const store = useBurgerStore();
+</script>
 
 <template>
   <header class="header">
@@ -12,6 +16,7 @@
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       class="burger"
+      @click="store.setIsBurgerClick()"
     >
       <g id="_x31_" />
 
@@ -80,6 +85,7 @@
   gap: 40px;
   box-sizing: border-box;
   padding: 0 40px;
+  flex-shrink: 0;
 }
 .logo {
   font-size: 24px;
@@ -91,5 +97,9 @@
   width: 32px;
   height: 32px;
   fill: #fff;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 </style>
