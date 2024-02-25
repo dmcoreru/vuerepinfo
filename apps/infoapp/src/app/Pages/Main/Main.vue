@@ -7,8 +7,10 @@ import News from '../../Components/News/News.vue';
 <template>
   <main class="main">
     <Header></Header>
-    <News></News>
-    <Sidebar></Sidebar>
+    <div class="content">
+      <Sidebar></Sidebar>
+      <News></News>
+    </div>
   </main>
 </template>
 
@@ -18,5 +20,14 @@ import News from '../../Components/News/News.vue';
   width: 100%;
   display: flex;
   flex-flow: column;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
 }
 </style>
