@@ -6,6 +6,11 @@ export const useBurgerStore = defineStore('burgerStore', {
       isBurgerClick: false,
     };
   },
+
+  getters: {
+    burgerClickState: (state) => state.isBurgerClick,
+  },
+
   actions: {
     setIsBurgerClick() {
       this.isBurgerClick = !this.isBurgerClick;

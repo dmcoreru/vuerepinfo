@@ -1,11 +1,17 @@
-<script setup lang="ts">
+<script lang="ts">
 import { useBurgerStore } from '../../stores/burgerStore';
 
-const store = useBurgerStore();
+export default {
+  setup() {
+    const store = useBurgerStore();
+
+    return { store };
+  },
+};
 </script>
 
 <template>
-  <div v-if="store.isBurgerClick" class="sidebar"></div>
+  <div v-if="store.burgerClickState" class="sidebar"></div>
 </template>
 
 <style scoped>
