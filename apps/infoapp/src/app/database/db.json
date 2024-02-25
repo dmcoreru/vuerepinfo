@@ -1,6 +1,6 @@
 {
   "news": [
-    {"id":  1, "title": "title1"},
-    {"id":  2, "title": "title2"}
+    {"id":  1, "preview": "https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/7428/1277428-i-0b324a29fb19", "title": "Spider-Man's Raimi suit comes to PS4 game today", "description": "Insomniac Games announces that the highly requested Sam Raimi suit is coming to Marvel's Spider-Man for PS4 today as part of a free update", "badges": ["Polygon"]},
+    {"id":  2, "preview": "https://wallbox.ru/wallpapers/main/201636/2c6f8ec907cc4a3.jpg", "title": "See the lives of street cats around the world", "description": "A new book of photography chronicles the grand odyssey of street cats, from Morocco to Japan", "badges": ["National Geographic"]}
   ]
 }
