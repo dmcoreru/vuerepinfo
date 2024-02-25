@@ -26,7 +26,7 @@ import News from '../../Components/News/News.vue';
 
 .content {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
