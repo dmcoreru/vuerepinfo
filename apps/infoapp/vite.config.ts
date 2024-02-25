@@ -2,6 +2,7 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import SvgIcons from 'vite-plugin-svg-icons';
 
 export default defineConfig({
   root: __dirname,

@@ -1,9 +1,6 @@
 <script lang="ts">
 import { useBurgerStore } from '../../stores/burgerStore';
-
-// import Burger from '../../../../public/burger.svg?component';
-
-// const store = useBurgerStore();
+import Burger from '../Icons/Burger/Burger.vue';
 
 export default {
   setup() {
@@ -12,21 +9,21 @@ export default {
     return { store };
   },
 
-  // components: {
-  //   Burger,
-  // },
+  components: {
+    Burger,
+  },
 };
 </script>
 
 <template>
   <header class="header">
-    <img
-      src="/public/burger.svg"
-      alt="burger"
-      class="burger"
+    <Burger
       @click="store.setIsBurgerClick()"
+      width="40"
+      height="40"
+      iconColor="#fff"
+      class="burger"
     />
-    <Burger />
     <p class="logo">News App</p>
   </header>
 </template>
@@ -51,10 +48,6 @@ export default {
   color: #fff;
 }
 .burger {
-  width: 32px;
-  height: 32px;
-  fill: #fff;
-
   &:hover {
     cursor: pointer;
   }
